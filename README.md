@@ -1,31 +1,61 @@
-This repository captures a data cleaning project that revolves around enhancing the quality and structure of a dataset. The initial steps involved downloading the dataset, creating a MySQL database, and uploading the data for further processing. The primary focus of this project is on meticulous data cleaning, employing various operations to ensure data integrity and coherence.
+# 🧹 Real Estate Data Cleaning with MySQL
 
-Key Cleaning Operations:
+This project focuses on enhancing data quality by cleaning, structuring, and standardizing a real estate dataset using MySQL.
 
-1. Standardize Date Format:
- 
-    ● Standardized date formats across the dataset for consistency and ease of analysis.
+---
 
-2. Address Standardization:
+## 📌 Key Objectives
 
-    ● Populated missing property addresses.
+- Import raw dataset into MySQL
+- Perform thorough data cleaning operations
+- Ensure improved structure and data quality
 
-    ● Separated address information into individual columns for better clarity (Address, City).
+---
 
-3. Owner Address Enhancement:
+## 🔧 Cleaning Operations Performed
 
-    ● Broke down owner addresses into individual columns (Address, City, State) for improved data organization.
+### ✅ 1. Standardized Date Format
+- Converted inconsistent date entries into a uniform format.
 
-4. Categorical Value Standardization:
+### ✅ 2. Address Standardization
+- Filled missing property addresses.
+- Split address into structured columns: `Address`, `City`.
 
-    ● Standardized 'Y' and 'N' values to 'Yes' and 'No' in the 'Sold As Vacant' field for clarity.
+### ✅ 3. Owner Address Enhancement
+- Separated owner address into: `Address`, `City`, `State`.
 
-5. Data Quality Assurance:
+### ✅ 4. Categorical Value Cleanup
+- Replaced `'Y'`/`'N'` with `'Yes'`/`'No'` in the `Sold As Vacant` column.
 
-    ● Removed duplicate entries to ensure accurate and reliable information.
+### ✅ 5. Data Deduplication
+- Removed duplicate records to ensure dataset accuracy.
 
-6. Optimization:
+### ✅ 6. Column Optimization
+- Dropped irrelevant or unused columns to streamline analysis.
 
-    ● Deleted unused columns, streamlining the dataset for improved efficiency.
+---
 
-Throughout these cleaning operations, changes were seamlessly updated in the MySQL database, ensuring that the dataset's cleanliness and structure were enhanced simultaneously. This GitHub repository serves as a comprehensive record of the data cleaning process, providing insights into the steps taken to refine and prepare the dataset for subsequent analysis.
+## 🛠️ Tools & Technologies
+
+| Tool        | Purpose                       |
+|-------------|-------------------------------|
+| MySQL       | Data storage and transformation |
+| SQL Queries | Data cleaning operations      |
+| CSV         | Initial data source format    |
+
+---
+
+---
+
+## 🧠 Learning Outcomes
+
+- Working with real-world messy data
+- Applying SQL transformations to improve data quality
+- Building a clean database structure for downstream analysis
+
+---
+
+
+## 📝 License
+
+This repository is intended for academic and learning purposes. Not for commercial reuse.
